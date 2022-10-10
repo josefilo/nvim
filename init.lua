@@ -1,4 +1,5 @@
 require("configs/settings")
-require("configs.settings")
-require("plugins.plugins") -- Para ler o packer.nvim
-
+require("configs/mappings")
+require("plugins/plugins")
+require("plugins/utils")
+require("plugins/complete")

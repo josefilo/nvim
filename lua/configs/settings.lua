@@ -18,6 +18,7 @@ vim.cmd([[ syntax on ]])
 vim.cmd([[ set bg=dark ]])
 vim.cmd([[ set termguicolors ]])
 vim.cmd([[ colorscheme onedark ]])
+vim.cmd([[ let extension = expand('%:e') ]])
 --Executa o ":PackerCompile" automaticamente ao executar o ":PackerInstall"
 vim.cmd([[
   augroup packer_user_config
