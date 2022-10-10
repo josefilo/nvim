@@ -1,13 +1,4 @@
---[[ init.lua ]]
+require("configs/settings")
+require("configs.settings")
+require("plugins.plugins") -- Para ler o packer.nvim
 
--- LEADER
--- These keybindings need to be defined before the first /
--- is called; otherwise, it will default to "\"
-vim.g.mapleader = ","
-vim.g.localleader = "\\"
-
--- IMPORTS
-require('vars')      -- Variables
-require('opts')      -- Options
--- require('keys')      -- Keymaps
--- require('plug')      -- Plugins
