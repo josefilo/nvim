@@ -1,6 +1,6 @@
-if extension == "md" then
-  require("plugins.tabnine")
-else
+--if extension == "md" then
+--  require("plugins.tabnine")
+--else
 
-  require("plugins.lsp")
-end
+--  require("plugins.lsp")
+--end

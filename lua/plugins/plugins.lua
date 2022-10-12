@@ -11,7 +11,6 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'tamton-aquib/staline.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'nvim-colorizer.lua'
   use 'tpope/vim-surround'
   use 'windwp/nvim-autopairs'
   use 'neovim/nvim-lspconfig'
@@ -24,7 +23,7 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'rafamadriz/friendly-snippets'
   use 'ray-x/lsp_signature.nvim'
-  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  use 'onsails/lspkind-nvim'
+  --use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+  --use 'onsails/lspkind-nvim'
 end)
 
