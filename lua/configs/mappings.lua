@@ -53,3 +53,5 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 --Mapeamento para o barbar
 map('n','<C-q>', '<Cmd>NvimTreeFocus<CR>',opts)
 map('n','<C-a>', '<Cmd>NvimTreeOpen<CR>',opts)
+map('n','<C-w>', '<Cmd>NvimTreeClose<CR>',opts)
+
