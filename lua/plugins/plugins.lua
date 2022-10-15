@@ -25,13 +25,24 @@ return require('packer').startup(function()
   use 'ray-x/lsp_signature.nvim'
   use 'onsails/lspkind-nvim'
   use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    'nvim-lualine/lualine.nvim',
+    requires = 
+    { 
+      'kyazdani42/nvim-web-devicons', 
+      opt = true 
+    }
   }
   use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 end)
 
 
