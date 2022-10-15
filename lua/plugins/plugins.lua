@@ -23,7 +23,11 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'rafamadriz/friendly-snippets'
   use 'ray-x/lsp_signature.nvim'
-  --use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  --use 'onsails/lspkind-nvim'
+  use 'onsails/lspkind-nvim'
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
+
 
