@@ -55,3 +55,6 @@ map('n','<C-q>', '<Cmd>NvimTreeFocus<CR>',opts)
 map('n','<C-a>', '<Cmd>NvimTreeOpen<CR>',opts)
 map('n','<C-w>', '<Cmd>NvimTreeClose<CR>',opts)
 
+--Salvar com Ctrl+s
+map('n','<C-s>', '<Cmd>w<CR>',opts)
+
