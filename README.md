@@ -1,7 +1,7 @@
 # nvim
 Repositório destinado ao versionamento do meu arquivo de configuração do vim
 
-O funcionamento da maior parte dos plugins depende de você deve ter o neovim >= 0.7 
+O funcionamento da maior parte dos plugins depende de você deve ter o neovim >= 0.8
 <p>
 instale as seguintes dependências:
   
@@ -26,14 +26,25 @@ Adicione o gerenciador de plugins
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  ```
+
   
-Esse é o link do gerenciador(antes de executar o PackerInstall você precisa comentar algumas partes do código na primeira vez que for executar):
-  <p>
-    https://github.com/wbthomason/packer.nvim#requirements
-    <p>
+Esse é o link do gerenciador(antes de executar o PackerInstall você precisa comentar algumas partes com erro do código na primeira vez que for executar):
+ 
+  ```sh
+  :PackerInstall
+ ```
 
+Siga os seguintes passos se desejar instalar o GitHub Copilot:
+```sh
+git clone https://github.com/github/copilot.vim \
+   ~/.config/nvim/pack/github/start/copilot.vim
+ ```
+ ```sh
+:Copilot setup
+:Copilot enable
+ ```
+ 
 Talves seja preciso adicionar essa dependência:
-
 ```sh
 sudo luarocks install luafilesystem
 ```
