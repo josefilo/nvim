@@ -9,5 +9,13 @@ instale as seguintes dependências:
 sudo apt install git build-essential cmake git pkg-config libtool g++ libunibilium4 libunibilium-dev \
 ninja-build gettext libtool libtool-bin autoconf automake unzip curl doxygen lua-term lua-term-dev luarocks
 ```
+Vá ao .config e clone o repositório
+
+```sh
+cd ~/.config/
+git clone https://github.com/Josefreitas788/nvim.git
+```
+
+
 
 obs: pretendo ir adicionando plugins conforme for sentindo a necessidade
