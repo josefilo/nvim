@@ -2,18 +2,26 @@
 Repositório destinado ao versionamento do meu arquivo de configuração do vim
 
 O funcionamento da maior parte dos plugins depende de você deve ter o neovim >= 0.8
+
+Caso não haja o neovim nessa versão nos repositórios da sua distro eu recomendo que instale o neovim usando os seguintes comandos:
+```sh
+$ git clone https://github.com/neovim/neovim
+$ cd neovim
+$ make CMAKE_BUILD_TYPE=RelWithDebInfo
+$ sudo make install
+```
 <p>
 instale as seguintes dependências:
   
 ```sh
-sudo apt install git build-essential cmake git pkg-config libtool g++ libunibilium4 libunibilium-dev \
+$ sudo apt install git build-essential cmake git pkg-config libtool g++ libunibilium4 libunibilium-dev \
 ninja-build gettext libtool libtool-bin autoconf automake unzip curl doxygen lua-term lua-term-dev luarocks
 ```
 Vá ao .config e clone o repositório
 
 ```sh
-cd ~/.config/
-git clone https://github.com/Josefreitas788/nvim.git
+$ cd ~/.config/
+$ git clone https://github.com/Josefreitas788/nvim.git
 ```
 
 Adicione as fontes que est repositório do terminalroot, é importante para que os icones apareçam
@@ -23,7 +31,7 @@ Adicione as fontes que est repositório do terminalroot, é importante para que 
 
 Adicione o gerenciador de plugins
 ```sh
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+$ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  ```
 
@@ -36,7 +44,7 @@ Esse é o link do gerenciador(antes de executar o PackerInstall você precisa co
 
 Siga os seguintes passos se desejar instalar o GitHub Copilot:
 ```sh
-git clone https://github.com/github/copilot.vim \
+$ git clone https://github.com/github/copilot.vim \
    ~/.config/nvim/pack/github/start/copilot.vim
  ```
  ```sh
@@ -46,7 +54,7 @@ git clone https://github.com/github/copilot.vim \
  
 Talves seja preciso adicionar essa dependência:
 ```sh
-sudo luarocks install luafilesystem
+$ sudo luarocks install luafilesystem
 ```
 
 
