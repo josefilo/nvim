@@ -36,7 +36,7 @@ $ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ```
 
   
-Esse é o link do gerenciador(antes de executar o PackerInstall você precisa comentar algumas partes com erro do código na primeira vez que for executar):
+Esse é o link do gerenciador(antes de executar o PackerInstall você precisa comentar algumas partes do código com erros na primeira vez que for executar):
  
   ```sh
   :PackerInstall
