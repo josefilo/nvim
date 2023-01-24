@@ -15,6 +15,17 @@ Vá ao .config e clone o repositório
 cd ~/.config/
 git clone https://github.com/Josefreitas788/nvim.git
 ```
+  
+Adicione o gerenciador de plugins
+```sh
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ ```
+  
+Esse é o link do gerenciador(antes de executar o PackerInstall você precisa comentar algumas partes do código na primeira vez que for executar):
+  <p>
+    https://github.com/wbthomason/packer.nvim#requirements
+    <p>
 
 
 
