@@ -1,6 +1,31 @@
 vim.cmd [[packadd packer.nvim]]
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+-- Config to go.nvim
+local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.go",
+  callback = function()
+   require('go.format').goimport()
+  end,
+  group = format_sync_grp,
+})
+
+
+local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function()
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua'
   use 'wbthomason/packer.nvim'
   use 'terroo/vim-simple-emoji'
   use 'navarasu/onedark.nvim' 
@@ -47,6 +72,15 @@ return require('packer').startup(function()
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
 
 
