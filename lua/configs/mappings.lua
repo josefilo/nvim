@@ -1,10 +1,3 @@
-require'lspconfig'.gopls.setup{}
-
-require('go').setup()
-require("go.format").gofmt()  -- gofmt only
-require("go.format").goimport()  -- goimport + gofmt
-
-
 --Telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'ff', builtin.find_files, {})
