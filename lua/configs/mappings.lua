@@ -1,5 +1,12 @@
-    --Telescope
-    local builtin = require('telescope.builtin')
+require'lspconfig'.gopls.setup{}
+
+require('go').setup()
+require("go.format").gofmt()  -- gofmt only
+require("go.format").goimport()  -- goimport + gofmt
+
+
+--Telescope
+local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'ff', builtin.find_files, {})
 vim.keymap.set('n', 'fg', builtin.live_grep, {})
 vim.keymap.set('n', 'fb', builtin.buffers, {})
