@@ -47,14 +47,22 @@ Siga os seguintes passos se desejar instalar o GitHub Copilot:
 $ git clone https://github.com/github/copilot.vim \
    ~/.config/nvim/pack/github/start/copilot.vim
  ```
- ```sh
+```sh
 :Copilot setup
 :Copilot enable
- ```
+```
  
 Talves seja preciso adicionar essa dependência:
 ```sh
 $ sudo luarocks install luafilesystem
+```
+
+
+Para o plugin de linguagens funcionar, ela precisa estar no ```$PATH```, como eu uso o "asdf", coloquei o seguinte comando no .bashrc
+#GOPATH
+Você consegue o com o comando "go env"
+```sh
+export PATH="$HOME/.asdf/installs/golang/1.19.5/packages/bin:$PATH"
 ```
 
 
