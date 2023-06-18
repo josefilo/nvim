@@ -13,6 +13,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function()
+  use 'mrjones2014/smart-splits.nvim'
   use 'ray-x/go.nvim'
   use 'ray-x/guihua.lua'
   use 'wbthomason/packer.nvim'
