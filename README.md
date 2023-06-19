@@ -59,12 +59,12 @@ $ sudo luarocks install luafilesystem
 
 
 Para o plugin de linguagens funcionar, ela precisa estar no ```$PATH```, como eu uso o "asdf", coloquei o seguinte comando no .bashrc
-#GOPATH
-Você consegue o com o comando "go env"
+
+#GOPATH -> Você consegue o com o comando "go env"
 ```sh
 export PATH="$HOME/.asdf/installs/golang/1.19.5/packages/bin:$PATH"
 ```
 
 
-
 obs: pretendo ir adicionando plugins conforme for sentindo a necessidade
+
