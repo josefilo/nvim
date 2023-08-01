@@ -65,6 +65,14 @@ Para o plugin de linguagens funcionar, ela precisa estar no ```$PATH```, como eu
 export PATH="$HOME/.asdf/installs/golang/1.19.5/packages/bin:$PATH"
 ```
 
+Esse comando adiciona os ícones caso não apareçam
+```sh
+cd ~/Downloads && mkdir fonts && cd fonts \␛
+git clone https://github.com/ryanoasis/nerd-fonts
+cd nerd-fonts
+./install.sh
+```
+
 
 obs: pretendo ir adicionando plugins conforme for sentindo a necessidade
 
